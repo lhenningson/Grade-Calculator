@@ -1,15 +1,19 @@
 // JavaScript Code
+// event listener
+document.getElementById("btn").addEventListener("click", Whole)
 
-// Input
-let CS1 = +prompt(`Your Client-Side Scripting 1 grade:`);
-let SP1 = +prompt(`Your Structured Programming 1 grade:`); 
-let SP2 = +prompt(`Your Structured Programming 2 grade:`); 
-let CSS2 = +prompt(`Your Client-Side Scripting 2 grade:`); 
-let PA = +prompt(`Your Project A grade:`); 
+function Whole(){
+// Input{
+let CS1 = +document.getElementById("css in").value;
+let SP1 = +document.getElementById("sp in").value;
+let SP2 = +document.getElementById("sp2 in").value;
+let CSS2 = +document.getElementById("css2 in").value;
+let PA = +document.getElementById("pa in").value;
 
 // Process
 let DIV = 5
 let Calc = CS1 + SP1 + SP2 + CSS2 + PA;
 let ANS = Calc / DIV;
 // Output
-alert(`Your Grade is ${ANS}.`);
+document.getElementById("output").innerHTML = ANS;
+}
